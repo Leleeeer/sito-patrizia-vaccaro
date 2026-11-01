@@ -1,8 +1,25 @@
 # Testi degli articoli copiati dal sito WordPress (senza immagini né stili)
 ARTICOLI = [
+{"data": "2026-11-01", "data_it": "1 novembre 2026", "slug": "la-sottile-linea-tra-il-burnout-della-cura-e-il-bisogno-di-cura",
+ "titolo": "La sottile linea tra il burnout della cura e il bisogno di cura", "html": """
+<p>Oggi non scriverò di intelligenza artificiale, ma del motivo per cui ci sono arrivata.</p>
+<p>Ci sono fasi della vita in cui i conti sembrano non tornare mai. Il lavoro, la famiglia, le responsabilità che si sommano: a un certo punto ci si accorge che la stanchezza non è più un episodio, ma una presenza costante.</p>
+<p>Curare è bellissimo. È appagante, anche quando all'inizio sembra frustrante. È un privilegio accompagnare le persone nelle loro sfide, vederle cambiare e arrivare dove volevano arrivare.</p>
+<p>Ma sotto la cura c'è il senso di responsabilità di chi la offre. Che si tratti di un genitore, di un caregiver, di un terapeuta, di un educatore o di un operatore sanitario, prima o poi dietro la cura si affaccia un bisogno: quello di chi cura.</p>
+<h2>Quando la bilancia perde l'equilibrio</h2>
+<p>Ultimamente, per motivi professionali e non solo, incontro sempre più spesso una sorta di stanchezza del "dare" e del "curare". Come se la bilancia tra le risorse interne, quelle che permettono di offrire cura, e quelle esterne, ciò che dalla cura ci ritorna, avesse perso il suo equilibrio.</p>
+<p>Nelle storie che ascolto, questa stanchezza si accompagna spesso a un senso di solitudine: l'impressione di dover reggere tutto da soli. È come attraversare una fase in cui l'unico scopo è resistere.</p>
+<h2>Il limite della resilienza</h2>
+<p>Ma fino a quando si può resistere? Negli anni del Covid la parola più di moda era "resilienza". In psicologia indica la capacità di attraversare le difficoltà e riorganizzarsi. Nell'uso comune, però, è diventata spesso sinonimo di sopportare senza fermarsi mai. E una resilienza intesa così rischia di schiacciarci, invece di aiutarci a reagire.</p>
+<p>Quanto possiamo essere adattabili e flessibili prima di esaurirci del tutto? Quanto i sistemi in cui siamo inseriti (famiglie, scuole, aziende, ospedali, istituzioni) sono attenti a questo bisogno, alleggerendo invece di appesantire? E quanto siamo abituati ad alzare la mano prima di arrivare a urlare, per paura di non trovare risposta?</p>
+<h2>Un altro modo di prendersi cura</h2>
+<p>Probabilmente il mio bisogno di allargare i miei interessi e di approfondire il lavoro di formazione nasce proprio da qui: dalla necessità di trovare un altro modo di offrire cura.</p>
+<p>Non penso che uno strumento possa risolvere la stanchezza di chi cura: quella chiede ascolto, relazione e sistemi più attenti. Ma l'intelligenza artificiale, usata con consapevolezza, può semplificare molte attività e restituire tempo, spazio ed energie. Insegnare a usarla con uno sguardo critico, senza smettere di guidare ciò che le affidiamo, è per me un modo diverso di prendermi cura delle persone.</p>
+<p>Ne ho scritto qui: <a href="/2026/11/01/la-fatica-la-fiducia-e-lintelligenza-artificiale/">La fatica, la fiducia e l'intelligenza artificiale</a>.</p>
+"""},
 {"data": "2026-11-01", "data_it": "1 novembre 2026", "slug": "la-fatica-la-fiducia-e-lintelligenza-artificiale",
  "titolo": "La fatica, la fiducia e l'intelligenza artificiale", "html": """
-<p>Ho passato parte delle vacanze a dialogare con diverse intelligenze artificiali, confrontandone le risposte per avere, chissà, qualche ispirazione in più. Volevo costruirmi un piano B. La domanda di partenza era questa: come posso mettere insieme oltre vent'anni di esperienza clinica come psicoterapeuta, la mindfulness, la filosofia, l'antropologia e l'intelligenza artificiale?</p>
+<p>Ho passato parte delle vacanze a dialogare con diverse intelligenze artificiali, confrontandone le risposte per avere, chissà, qualche ispirazione in più. Volevo costruirmi un piano B (qui racconto <a href="/2026/11/01/la-sottile-linea-tra-il-burnout-della-cura-e-il-bisogno-di-cura/">il motivo per cui ci sono arrivata</a>). La domanda di partenza era questa: come posso mettere insieme oltre vent'anni di esperienza clinica come psicoterapeuta, la mindfulness, la filosofia, l'antropologia e l'intelligenza artificiale?</p>
 <p>Non perché voglia lasciare di punto in bianco la clinica o l'attività di formazione che svolgo da anni. Ma perché arriva un momento della vita in cui ci si sente un po' sopraffatti dai doveri e, allo stesso tempo, si ha consapevolezza delle proprie risorse, della spinta alla libertà e del fatto che la vita non dura in eterno. È in quel momento che viene voglia di riprendere in mano passioni e interessi, e di far quadrare il cerchio.</p>
 <p>Da quelle conversazioni è nata una serie di idee sul legame tra vulnerabilità umana e intelligenza artificiale, raccolte attorno a una parola che forse non tutti conoscono: psybersecurity.</p>
 <h2>Che cos'è la psybersecurity</h2>
