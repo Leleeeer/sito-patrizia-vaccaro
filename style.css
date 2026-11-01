@@ -107,7 +107,7 @@ nav a:hover { color: var(--ink); }
 
 /* articoli */
 .posts { list-style: none; padding: 0; margin: 0; border-top: 1px solid var(--line); }
-.posts li { display: grid; grid-template-columns: 8.5rem 1fr; gap: 1rem; padding: 1rem 0; border-bottom: 1px solid var(--line); }
+.posts li { display: grid; grid-template-columns: 1fr; gap: 1rem; padding: 1rem 0; border-bottom: 1px solid var(--line); }
 .posts time { color: var(--muted); font-size: 0.9rem; font-variant-numeric: tabular-nums; padding-top: 0.15rem; }
 .posts a { color: var(--ink); text-decoration: none; font-weight: 500; }
 .posts a:hover { color: var(--accent); text-decoration: underline; }
