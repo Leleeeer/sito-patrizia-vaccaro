@@ -15,10 +15,10 @@ body = src.split("</style>", 1)[1].split("<script>", 1)[0]
 
 # Font ospitati sul sito (niente chiamate a Google)
 font_css = """
-@font-face { font-family: "Gloock"; src: url("/fonts/gloock-400.woff2") format("woff2"); font-weight: 400; font-display: swap; }
-@font-face { font-family: "Figtree"; src: url("/fonts/figtree-400.woff2") format("woff2"); font-weight: 400; font-display: swap; }
-@font-face { font-family: "Figtree"; src: url("/fonts/figtree-500.woff2") format("woff2"); font-weight: 500; font-display: swap; }
-@font-face { font-family: "Figtree"; src: url("/fonts/figtree-600.woff2") format("woff2"); font-weight: 600; font-display: swap; }
+@font-face { font-family: "Gloock"; src: url("fonts/gloock-400.woff2") format("woff2"); font-weight: 400; font-display: swap; }
+@font-face { font-family: "Figtree"; src: url("fonts/figtree-400.woff2") format("woff2"); font-weight: 400; font-display: swap; }
+@font-face { font-family: "Figtree"; src: url("fonts/figtree-500.woff2") format("woff2"); font-weight: 500; font-display: swap; }
+@font-face { font-family: "Figtree"; src: url("fonts/figtree-600.woff2") format("woff2"); font-weight: 600; font-display: swap; }
 """
 extra_css = """
 :root { padding-top: env(safe-area-inset-top, 0px); padding-bottom: env(safe-area-inset-bottom, 0px); }
@@ -101,7 +101,16 @@ def page(title, desc, path, content):
 </html>
 """
 
+def relativize(rel, text):
+    depth = rel.count("/")
+    pre = "../" * depth
+    text = text.replace('href="/', 'href="' + (pre or "./")).replace('src="/', 'src="' + pre)
+    text = text.replace('url=/', 'url=' + (pre or "./"))
+    return text.replace('href="./"', 'href="./"')
+
 def write(rel, text):
+    if rel.endswith(".html"):
+        text = relativize(rel, text)
     p = os.path.join(OUT, rel)
     os.makedirs(os.path.dirname(p), exist_ok=True)
     open(p, "w", encoding="utf-8").write(text)
@@ -160,7 +169,6 @@ write("404.html", page("Pagina non trovata – Patrizia Vaccaro", DESC, "/404.ht
 <p style="margin-top:1rem">La pagina che cercavi non esiste più. <a href="/">Torna alla pagina iniziale</a>.</p>
 </div></div></main>
 {footer}"""))
-write("CNAME", "patriziavaccaro.net\n")
 write(".nojekyll", "")
 write("robots.txt", f"User-agent: *\nAllow: /\nSitemap: {DOMINIO}/sitemap.xml\n")
 urls = ["/"] + [f"/{a['data'].replace('-', '/')}/{a['slug']}/" for a in ARTICOLI]
