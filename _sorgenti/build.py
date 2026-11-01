@@ -34,6 +34,10 @@ img { max-width: 100%; }
 .article h1 { font-size: var(--step-3); margin-top: 0.75rem; }
 .article .body { display: grid; gap: 1.1rem; margin-top: 2rem; }
 .article .back { display: inline-block; margin-top: 3rem; }
+.article .body h2 { font-size: var(--step-1); margin-top: 1rem; }
+.article .body h3 { font-size: var(--step-0); margin-top: 0.5rem; }
+.article .body hr { border: 0; border-top: 1px solid var(--line); width: 100%; margin: 1rem 0 0; }
+.article .body ul { margin: 0; padding-left: 1.1rem; display: grid; gap: 0.4rem; }
 """
 style = font_css + css + extra_css
 
