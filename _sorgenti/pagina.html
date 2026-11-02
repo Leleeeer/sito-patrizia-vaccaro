@@ -157,6 +157,14 @@ nav a:hover { color: var(--cream); }
   .hero figcaption { color: var(--muted); }
   .hero figure { max-width: 380px; justify-self: center; }
 }
+.topics { margin-top: 2.5rem; display: grid; gap: 0.5rem; max-width: 70ch; }
+.topics h3 { margin-bottom: 0.5rem; }
+.topics details { border-top: 1px solid var(--line); padding-block: 0.8rem; }
+.topics details:last-of-type { border-bottom: 1px solid var(--line); }
+.topics summary { cursor: pointer; font-weight: 600; }
+.topics summary:focus-visible { outline: 2px solid var(--sand); outline-offset: 3px; }
+.topics details p { margin-top: 0.5rem; color: var(--muted); }
+.pull { margin: 0.5rem 0 0; padding-left: 1.25rem; border-left: 2px solid var(--sand-box); font-family: var(--font-display); font-size: var(--step-1); line-height: 1.35; color: var(--accent); }
 </style>
 
 <header class="top">
@@ -164,10 +172,10 @@ nav a:hover { color: var(--cream); }
     <a class="brand" href="#inizio">Patrizia Vaccaro</a>
     <nav aria-label="Menu principale">
       <ul>
+        <li><a href="#chi-sono">Chi sono</a></li>
         <li><a href="#di-cosa-mi-occupo">Di cosa mi occupo</a></li>
         <li><a href="#aziende">Per le aziende</a></li>
         <li><a href="#persone-e-ia">Persone e IA</a></li>
-        <li><a href="#chi-sono">Chi sono</a></li>
         <li><a href="#articoli">Articoli</a></li>
         <li><a href="#contatti">Contatti</a></li>
       </ul>
@@ -194,7 +202,36 @@ nav a:hover { color: var(--cream); }
     </div>
   </section>
 
-  <section class="band alt" id="di-cosa-mi-occupo">
+  <section class="band alt" id="chi-sono">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Chi sono</p>
+        <h2>Persone nei momenti di transizione</h2>
+      </div>
+      <div class="bio">
+        <div class="text">
+          <p>Sono psicoterapeuta e filosofa. Mi occupo di persone nei momenti di transizione: quando cambiano il corpo, le relazioni, i progetti di vita o il lavoro.</p>
+          <p>Da oltre vent'anni lavoro come psicoterapeuta cognitivista e nel tempo sono diventata anche istruttrice di protocolli basati sulla mindfulness. Il mio lavoro clinico riguarda soprattutto le relazioni, le transizioni di vita, gli aspetti psicologici legati alla salute della donna e della coppia (menopausa, amenorrea, percorsi legati alla fertilità), la regolazione dello stress e le dipendenze. Lavoro con giovani adulti, adulti e coppie, in studio e online.</p>
+          <p>Mi sono formata all'Università di Pavia, con una laurea in Filosofia e una in Psicologia, e mi sono specializzata in psicoterapia cognitiva e cognitivo-comportamentale presso Studi Cognitivi di Milano. Per molti anni ho lavorato al Policlinico San Matteo di Pavia, nell'ambulatorio di endocrinologia ginecologica e nel centro di procreazione medicalmente assistita, e in seguito in diversi centri clinici di Milano e Pavia. Nel 2018 ho conseguito il Mindfulness Professional Training dell'Associazione Italiana Mindfulness.</p>
+          <p>Accanto alla clinica insegno nelle scuole di specializzazione in psicoterapia, Studi Cognitivi a Milano e Centro di Terapia Cognitivo Comportamentale a Firenze: come e quando usare la mindfulness e la clinica delle dipendenze.</p>
+          <p>Negli ultimi tempi sono tornata a un interesse che avevo già incontrato durante gli studi universitari: il rapporto tra essere umano e tecnologia, oggi attraverso l'intelligenza artificiale. Mi interessa capire cosa succede alle persone quando cambiano gli strumenti con cui pensano, apprendono, decidono e si relazionano. L'intelligenza artificiale è già entrata nella vita quotidiana e anche nella stanza di terapia: come supporto per il professionista, ma anche come interlocutore per il paziente tra una seduta e l'altra.</p>
+          <p>È qui che oggi metto in dialogo psicoterapia, filosofia, mindfulness, antropologia e intelligenza artificiale.</p>
+          <blockquote class="pull">Cosa succede alle persone quando cambiano le condizioni in cui pensano, decidono, lavorano e vivono?</blockquote>
+        </div>
+        <dl class="facts">
+          <div><dt>Clinica</dt><dd>Psicoterapia individuale e di coppia, in studio e online</dd></div>
+          <div><dt>Formazione e didattica</dt><dd>Psicoterapia, mindfulness e clinica delle dipendenze</dd></div>
+          <div><dt>Organizzazioni</dt><dd>Workshop, sportello psicologico e mindfulness</dd></div>
+          <div><dt>Studio e approfondimento</dt><dd>Essere umano e tecnologia: vulnerabilità, fiducia, delega, giudizio e responsabilità</dd></div>
+          <div><dt>Lingue</dt><dd>Italiano, inglese, francese</dd></div>
+          <div><dt>Albo</dt><dd>Ordine degli Psicologi della Lombardia n. 7542/03</dd></div>
+          <div><dt>Profilo</dt><dd><a href="https://www.linkedin.com/in/patrizia-vaccaro-015a5126">LinkedIn</a></dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <section class="band" id="di-cosa-mi-occupo">
     <div class="wrap">
       <div class="section-head">
         <p class="eyebrow">Di cosa mi occupo</p>
@@ -229,7 +266,7 @@ nav a:hover { color: var(--cream); }
     </div>
   </section>
 
-  <section class="band">
+  <section class="band alt">
     <div class="wrap">
       <div class="section-head">
         <p class="eyebrow">Come lavoro</p>
@@ -239,33 +276,63 @@ nav a:hover { color: var(--cream); }
         <div class="mode"><span class="tag">Individuale</span><p>Colloqui per giovani adulti e adulti, in studio o in videochiamata.</p></div>
         <div class="mode"><span class="tag">Coppia</span><p>Percorsi di coppia, anche online.</p></div>
         <div class="mode"><span class="tag">Gruppi</span><p>Gruppi di mindfulness a tema, con cadenza circa mensile. Scrivimi per le prossime date.</p></div>
-        <div class="mode"><span class="tag">Aziende</span><p>Percorsi su gestione dello stress, salute della donna e intelligenza artificiale. <a href="#aziende">Scopri di più</a></p></div>
+        <div class="mode"><span class="tag">Aziende</span><p>Workshop per manager e HR, sportello psicologico e percorsi di mindfulness. <a href="#aziende">Scopri di più</a></p></div>
       </div>
     </div>
   </section>
 
-  <section class="band alt" id="aziende">
+  <section class="band" id="aziende">
     <div class="wrap">
       <div class="section-head">
-        <p class="eyebrow">Per le aziende</p>
+        <p class="eyebrow">Per le aziende · Welfare e formazione</p>
         <h2>Il benessere delle persone anche sul lavoro</h2>
-        <p style="color:var(--muted)">Alcuni dei temi che tratto in studio riguardano da vicino la vita lavorativa. Li propongo anche alle aziende, con percorsi pensati per i loro dipendenti.</p>
+        <p style="color:var(--muted)">Propongo alle organizzazioni tre tipi di intervento, da combinare secondo le esigenze.</p>
       </div>
       <div class="areas">
         <div class="area">
-          <h3>Gestione dello stress</h3>
-          <p>Strumenti cognitivo-comportamentali e di mindfulness per riconoscere e gestire lo stress e rafforzare la capacità di affrontare le difficoltà.</p>
+          <h3>Workshop per manager e HR</h3>
+          <p>Percorsi sui fattori psicologici, relazionali e sociali che influenzano il lavoro individuale e di gruppo: leadership, comunicazione, gestione dello stress e cambiamenti del mondo del lavoro.</p>
         </div>
         <div class="area">
-          <h3>Salute della donna al lavoro</h3>
-          <p>Fertilità e procreazione assistita, menopausa: fasi della vita che pesano anche sul lavoro e di cui spesso non si parla.</p>
+          <h3>Sportello psicologico</h3>
+          <p>Uno spazio di ascolto e supporto per i dipendenti, con cicli di colloqui individuali: difficoltà personali o lavorative, stress, relazioni, cambiamenti, momenti di particolare vulnerabilità.</p>
         </div>
         <div class="area">
-          <h3>Persone e intelligenza artificiale</h3>
-          <p>Accompagnare le persone nell'introduzione dell'intelligenza artificiale, con attenzione al benessere, alla responsabilità e all'etica. <a href="#persone-e-ia">Scopri di più</a></p>
+          <h3>Mindfulness</h3>
+          <p>Percorsi strutturati e workshop esperienziali per sviluppare consapevolezza e capacità di autoregolazione, anche su temi specifici come stress, attenzione e comunicazione.</p>
         </div>
       </div>
+      <div class="topics">
+        <h3>I temi dei workshop</h3>
+        <details><summary>Salute mestruale e riproduttiva nel lavoro</summary><p>L'impatto di ciclo mestruale, patologie ginecologiche, fertilità, gravidanza e menopausa sulla vita professionale. <a href="#aziende-donna">Scopri di più</a></p></details>
+        <details><summary>Persone e intelligenza artificiale: fiducia, vulnerabilità e responsabilità</summary><p>Come cambiano il modo di cercare informazioni, decidere e dare fiducia agli strumenti quando l'intelligenza artificiale entra nei processi di lavoro. <a href="#persone-e-ia">Scopri di più</a></p></details>
+        <details><summary>Intelligenza emotiva e metacognizione</summary><p>Riconoscere le proprie emozioni, comprendere i propri automatismi e osservare come prendiamo decisioni: strumenti per consapevolezza di sé, autoregolazione e riflessione sui processi decisionali nelle situazioni lavorative complesse.</p></details>
+        <details><summary>Famiglie, identità e conciliazione vita-lavoro</summary><p>Forme familiari e percorsi di vita sempre più diversi: i bisogni che emergono nelle diverse fasi della vita e come cultura e pratiche organizzative possono favorire un ambiente di lavoro più inclusivo.</p></details>
+        <details><summary>Stress, regolazione emotiva e benessere organizzativo</summary><p>I meccanismi psicologici e fisiologici delle risposte allo stress e le loro conseguenze su attenzione, decisioni e relazioni. Può essere integrato con attività di mindfulness. <a href="#aziende-stress">Scopri di più</a></p></details>
+        <details><summary>Generazioni e cambiamento del lavoro</summary><p>Aspettative, valori e rapporto con carriera, tempo, flessibilità, autonomia e appartenenza: leggere le differenze tra generazioni senza trasformarle in stereotipi e costruire modalità di collaborazione efficaci.</p></details>        <details><summary>Relazioni e leadership</summary><p>Il contesto organizzativo è prima di tutto un contesto relazionale. Il workshop introduce modelli psicologici (stili di attaccamento, sistemi motivazionali, funzionamento dei gruppi) per riconoscere i propri schemi relazionali e gestire in modo più efficace collaboratori e gruppi.</p></details>
+      </div>
       <div style="margin-top:2rem"><a class="btn primary" href="#contatti">Contattami per una proposta</a></div>
+    </div>
+  </section>
+
+  <section class="band alt ia" id="aziende-donna">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">Per le aziende · Salute della donna</p>
+        <h2 style="margin-top:0.75rem">Salute mestruale e riproduttiva nel lavoro</h2>
+        <p style="margin-top:1rem;color:var(--muted)">Ciclo mestruale, patologie ginecologiche, fertilità, gravidanza e menopausa possono incidere sulla vita professionale. Sono temi di cui sul lavoro si parla ancora poco.</p>
+      </div>
+      <div>
+        <ul class="questions">
+          <li>Che impatto hanno queste fasi della vita sul lavoro?</li>
+          <li>Come riconoscere i bisogni e ridurre lo stigma?</li>
+          <li>Come favorire condizioni di lavoro compatibili con ogni fase della vita?</li>
+        </ul>
+        <div class="two">
+          <div><h3>Per manager e HR</h3><p style="margin-top:0.4rem">Un percorso per aumentare la consapevolezza su temi ancora poco discussi nelle organizzazioni e avere strumenti per riconoscere i bisogni, ridurre lo stigma e favorire condizioni di lavoro compatibili con le diverse fasi della vita.</p></div>
+          <div><h3>Per le dipendenti</h3><p style="margin-top:0.4rem">Uno sportello psicologico con colloqui individuali. Mi occupo di salute della donna da oltre vent'anni, a partire dal centro di procreazione medicalmente assistita del Policlinico San Matteo di Pavia.</p></div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -284,37 +351,34 @@ nav a:hover { color: var(--cream); }
         </ul>
         <div class="two">
           <div><h3>Per le persone</h3><p style="margin-top:0.4rem">Riflessione e supporto per chi vive questi cambiamenti con fatica, dubbi o preoccupazione, nella vita personale o nel lavoro.</p></div>
-          <div><h3>Per le aziende</h3><p style="margin-top:0.4rem">Percorsi per accompagnare le persone nell'introduzione dell'intelligenza artificiale, con attenzione al benessere, alla responsabilità e all'etica.</p></div>
+          <div><h3>Per le aziende</h3><p style="margin-top:0.4rem">Un workshop per HR e manager sui fattori umani dell'adozione dell'intelligenza artificiale: eccesso di fiducia nelle risposte, tendenza dei sistemi a dare ragione a chi li usa, errori e distorsioni, delega del giudizio. L'obiettivo è mantenere capacità di giudizio, responsabilità e autonomia di scelta.</p></div>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="band" id="chi-sono">
+  <section class="band alt ia" id="aziende-stress">
     <div class="wrap">
-      <div class="section-head">
-        <p class="eyebrow">Chi sono</p>
-        <h2>Oltre vent'anni di lavoro clinico</h2>
+      <div>
+        <p class="eyebrow">Per le aziende · Gestione dello stress</p>
+        <h2 style="margin-top:0.75rem">Lo stress sul lavoro si può imparare a gestire</h2>
+        <p style="margin-top:1rem;color:var(--muted)">Ritmi serrati, cambiamenti organizzativi, carichi che si sommano alla vita privata. Lo stress fa parte del lavoro, ma quando diventa continuo pesa sulle persone e sui gruppi.</p>
       </div>
-      <div class="bio">
-        <div class="text">
-          <p>Sono psicologa e psicoterapeuta a indirizzo cognitivo-comportamentale e istruttrice di protocolli basati sulla mindfulness.</p>
-          <p>Mi sono formata all'Università di Pavia, con una laurea in Filosofia e una in Psicologia, e mi sono specializzata in psicoterapia cognitiva e cognitivo-comportamentale presso Studi Cognitivi di Milano. Nel 2018 ho conseguito il Mindfulness Professional Training dell'Associazione Italiana Mindfulness.</p>
-          <p>Ho lavorato per molti anni al Policlinico San Matteo di Pavia, nell'ambulatorio di endocrinologia ginecologica e nel centro di procreazione medicalmente assistita, e in seguito in diversi centri clinici di Milano e Pavia.</p>
-          <p>Oggi insegno anche nelle scuole di specializzazione Studi Cognitivi (Milano) e Centro di Terapia Cognitivo Comportamentale (Firenze), su dipendenze e mindfulness.</p>
+      <div>
+        <ul class="questions">
+          <li>Come reagiscono le persone alla pressione, al conflitto e all'incertezza?</li>
+          <li>Che effetto ha lo stress su attenzione, decisioni e relazioni?</li>
+          <li>Quali strumenti aiutano a regolarlo nella giornata lavorativa?</li>
+        </ul>
+        <div class="two">
+          <div><h3>Per manager e HR</h3><p style="margin-top:0.4rem">Un workshop sui meccanismi psicologici e fisiologici delle risposte allo stress e sulle loro conseguenze su attenzione, decisioni e relazioni, integrabile con attività esperienziali di mindfulness e tecniche di regolazione dello stress.</p></div>
+          <div><h3>Per i dipendenti</h3><p style="margin-top:0.4rem">Percorsi di mindfulness sulla gestione dello stress e uno sportello psicologico con colloqui individuali. Ho condotto progetti di mindfulness per studenti e dipendenti dell'Università di Urbino.</p></div>
         </div>
-        <dl class="facts">
-          <div><dt>Approccio</dt><dd>Cognitivo-comportamentale e mindfulness</dd></div>
-          <div><dt>Specializzazione</dt><dd>Studi Cognitivi, Milano</dd></div>
-          <div><dt>Albo</dt><dd>Ordine degli Psicologi della Lombardia n. 7542/03</dd></div>
-          <div><dt>Lingue</dt><dd>Italiano, inglese, francese</dd></div>
-          <div><dt>Profilo</dt><dd><a href="https://www.linkedin.com/in/patrizia-vaccaro-015a5126">LinkedIn</a></dd></div>
-        </dl>
       </div>
     </div>
   </section>
 
-  <section class="band alt" id="articoli">
+  <section class="band" id="articoli">
     <div class="wrap">
       <div class="section-head">
         <p class="eyebrow">Articoli</p>
@@ -331,7 +395,7 @@ nav a:hover { color: var(--cream); }
     </div>
   </section>
 
-  <section class="band" id="contatti">
+  <section class="band alt" id="contatti">
     <div class="wrap contact">
       <div>
         <p class="eyebrow">Contatti</p>
