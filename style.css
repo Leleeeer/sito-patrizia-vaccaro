@@ -66,7 +66,7 @@ nav a:hover { color: var(--ink); }
 .hero .lead { font-size: var(--step-1); color: var(--muted); max-width: 38ch; margin-top: 1.25rem; }
 .hero .actions { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 2rem; }
 .hero figure { margin: 0; }
-.hero img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: 50% 30%; border-radius: 200px 200px 6px 6px; display: block; }
+.hero img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: 50% 25%; border-radius: 200px 200px 6px 6px; display: block; }
 .hero figcaption { font-size: 0.85rem; color: var(--muted); margin-top: 0.75rem; }
 .btn { display: inline-block; padding: 0.8rem 1.4rem; border-radius: 999px; font-weight: 600; text-decoration: none; font-size: 0.98rem; border: 1px solid var(--accent); }
 .btn.primary { background: var(--accent); color: var(--on-accent); }
