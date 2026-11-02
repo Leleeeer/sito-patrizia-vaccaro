@@ -1,12 +1,22 @@
-"""Genera il sito statico di patriziavaccaro.net nella cartella build/."""
+"""Genera il sito statico di patriziavaccaro.net.
+
+Uso: python3 _sorgenti/build.py   (dalla cartella principale del repository)
+
+Sorgenti, tutte in _sorgenti/:
+  pagina.html  testi e stile della pagina principale
+  articoli.py  articoli (il primo dell'elenco compare per primo sul sito)
+  foto.jpg     foto
+  fonts/       caratteri
+Tutto il resto del repository viene rigenerato: non modificarlo a mano.
+"""
 import os, re, shutil, sys
 sys.path.insert(0, os.path.dirname(__file__))
 from articoli import ARTICOLI
 
 BASE = os.path.dirname(os.path.abspath(__file__))
-SRC = os.path.join(BASE, "sito", "index.html")
-OUT = os.path.join(BASE, "build")
-FONTS = os.path.join(BASE, "fonts-npm", "node_modules", "@fontsource")
+SRC = os.path.join(BASE, "pagina.html")
+OUT = os.path.dirname(BASE)
+KEEP = {".git", "_sorgenti", "CNAME", "README.md", ".gitignore"}
 DOMINIO = "https://patriziavaccaro.net"
 
 src = open(SRC, encoding="utf-8").read()
@@ -33,6 +43,11 @@ img { max-width: 100%; }
 .article h1 { font-size: var(--step-3); margin-top: 0.75rem; }
 .article .body { display: grid; gap: 1.1rem; margin-top: 2rem; }
 .article .back { display: inline-block; margin-top: 3rem; }
+.article .body h2 { font-size: var(--step-1); margin-top: 1rem; }
+.article .body h3 { font-size: var(--step-0); margin-top: 0.5rem; }
+.article .body hr { border: 0; border-top: 1px solid var(--line); width: 100%; margin: 1rem 0 0; }
+.article .body ul { margin: 0; padding-left: 1.1rem; display: grid; gap: 0.4rem; }
+.posts li { grid-template-columns: 1fr; }
 """
 style = font_css + css + extra_css
 
@@ -65,9 +80,10 @@ pubs = """
           <li>P. Vaccaro, <em>Equilibri interrotti. Studio sperimentale di terapia cognitiva di gruppo in pazienti con amenorrea ipotalamica</em>, Edizioni Accademiche Italiane, 2015</li>
         </ul>
       </div>"""
-body = body.replace("      </ul>\n    </div>\n  </section>\n\n  <section class=\"band\" id=\"contatti\">",
-                    "      </ul>" + pubs + "\n    </div>\n  </section>\n\n  <section class=\"band\" id=\"contatti\">")
-assert 'class="pubs"' in body
+# Elenco articoli generato da articoli.py, senza date, seguito dalle pubblicazioni
+lista = "\n".join(f'        <li><a href="/{a["data"].replace("-", "/")}/{a["slug"]}/">{a["titolo"]}</a></li>' for a in ARTICOLI)
+body, n = re.subn(r'<ul class="posts">.*?</ul>', '<ul class="posts">\n' + lista + '\n      </ul>' + pubs, body, count=1, flags=re.S)
+assert n == 1
 
 header = re.search(r'<header class="top">.*?</header>', body, re.S).group(0)
 footer = re.search(r'<footer>.*?</footer>', body, re.S).group(0)
@@ -76,7 +92,7 @@ body_home = body.replace('href="#inizio"', 'href="/"')
 
 DESC = "Patrizia Vaccaro, psicologa e psicoterapeuta a Milano e online. Giovani adulti, adulti e coppie: transizioni di vita, stress e ansia, relazioni, salute della donna, persone e intelligenza artificiale."
 
-def page(title, desc, path, content):
+def page(title, desc, path, content, tipo="website"):
     return f"""<!doctype html>
 <html lang="it">
 <head>
@@ -85,12 +101,12 @@ def page(title, desc, path, content):
 <title>{title}</title>
 <meta name="description" content="{desc}">
 <link rel="canonical" href="{DOMINIO}{path}">
-<meta property="og:title" content="{title}">
+<meta property="og:title" content="{title.replace(chr(39), '&#39;')}">
 <meta property="og:description" content="{desc}">
 <meta property="og:url" content="{DOMINIO}{path}">
 <meta property="og:image" content="{DOMINIO}/foto.jpg">
 <meta property="og:locale" content="it_IT">
-<meta property="og:type" content="website">
+<meta property="og:type" content="{tipo}">
 <link rel="icon" href="/foto.jpg">
 <link rel="stylesheet" href="/style.css">
 </head>
@@ -114,16 +130,14 @@ def write(rel, text):
     os.makedirs(os.path.dirname(p), exist_ok=True)
     open(p, "w", encoding="utf-8").write(text)
 
-if os.path.exists(OUT):
-    shutil.rmtree(OUT)
-os.makedirs(OUT)
+for name in os.listdir(OUT):
+    if name in KEEP:
+        continue
+    p = os.path.join(OUT, name)
+    shutil.rmtree(p) if os.path.isdir(p) else os.remove(p)
 write("style.css", style.strip() + "\n")
-shutil.copy(os.path.join(BASE, "sito", "foto.jpg"), os.path.join(OUT, "foto.jpg"))
-for name, f in [("young-serif-400", "young-serif/files/young-serif-latin-400-normal.woff2"),
-                ("source-sans-3-400", "source-sans-3/files/source-sans-3-latin-400-normal.woff2"),
-                ("source-sans-3-600", "source-sans-3/files/source-sans-3-latin-600-normal.woff2")]:
-    os.makedirs(os.path.join(OUT, "fonts"), exist_ok=True)
-    shutil.copy(os.path.join(FONTS, f), os.path.join(OUT, "fonts", name + ".woff2"))
+shutil.copy(os.path.join(BASE, "foto.jpg"), os.path.join(OUT, "foto.jpg"))
+shutil.copytree(os.path.join(BASE, "fonts"), os.path.join(OUT, "fonts"))
 
 # Home: i link agli articoli diventano relativi
 write("index.html", page("Patrizia Vaccaro – Psicologa e psicoterapeuta a Milano e online", DESC, "/", body_home))
@@ -144,8 +158,8 @@ for a in ARTICOLI:
   </div>
 </main>
 {footer}"""
-    desc = re.sub(r"<[^>]+>", "", a["html"]).strip().split("\n")[0][:155].rsplit(" ", 1)[0] + "…"
-    write(path.strip("/") + "/index.html", page(f"{a['titolo']} – Patrizia Vaccaro", desc.replace('"', "&quot;"), path, content))
+    desc = a.get("descrizione") or re.sub(r"<[^>]+>", "", a["html"]).strip().split("\n")[0][:155].rsplit(" ", 1)[0] + "…"
+    write(path.strip("/") + "/index.html", page(f"{a['titolo']} – Patrizia Vaccaro", desc.replace('"', "&quot;"), path, content, "article"))
 
 # Vecchi indirizzi del sito WordPress: rimandano alla sezione giusta
 redirects = {
