@@ -2,37 +2,31 @@
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gloock&family=Figtree:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Source+Sans+3:wght@400;600&display=swap">
 <style>
-/* Layout: una pagina calma a fasce orizzontali; testo a colonna stretta, la foto come unico elemento forte in apertura */
+/* Layout (stile E2): fascia verde salvia in apertura su telefono, verde solo dietro al testo su computer; sfondo sabbia; una pagina calma a fasce orizzontali; testo a colonna stretta, la foto come unico elemento forte in apertura */
 :root {
-  --bg: #F2F4F1;
-  --surface: #E4EAE5;
-  --ink: #1D2B29;
-  --muted: #586864;
-  --accent: #2E5B5E;
-  --sand: #B8935A;
-  --line: #CBD5CF;
-  --on-accent: #F2F4F1;
-  --font-display: "Gloock", "Georgia", "Times New Roman", serif;
-  --font-body: "Figtree", "Segoe UI", system-ui, sans-serif;
+  --bg: #F7EFE6;
+  --surface: #EFE4D7;
+  --ink: #26302D;
+  --muted: #5E5550;
+  --accent: #4A6E62;
+  --sand: #8E5A6B;
+  --line: #E3D6C7;
+  --on-accent: #FBF7F1;
+  --green: #4A6E62;
+  --green-ink: #E3ECE6;
+  --cream: #FBF7F1;
+  --sand-box: #E6CBAE;
+  --hero-btn: #F0DCC4;
+  --hero-btn-ink: #2F4A41;
+  --font-display: "Young Serif", "Georgia", "Times New Roman", serif;
+  --font-body: "Source Sans 3", "Segoe UI", system-ui, sans-serif;
   --step-0: 1.0625rem;
   --step-1: 1.25rem;
   --step-2: 1.75rem;
   --step-3: clamp(2.1rem, 5vw, 3.2rem);
   --measure: 62ch;
-}
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    --bg: #131A19; --surface: #1C2624; --ink: #E5ECE8; --muted: #9DB0AA;
-    --accent: #8CB9B4; --sand: #D2B07A; --line: #2C3A37; --on-accent: #131A19;
-    color-scheme: dark;
-  }
-}
-:root[data-theme="dark"] {
-  --bg: #131A19; --surface: #1C2624; --ink: #E5ECE8; --muted: #9DB0AA;
-  --accent: #8CB9B4; --sand: #D2B07A; --line: #2C3A37; --on-accent: #131A19;
-  color-scheme: dark;
 }
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
@@ -134,6 +128,35 @@ form button { justify-self: start; cursor: pointer; }
 
 footer { border-top: 1px solid var(--line); padding-block: 2rem; color: var(--muted); font-size: 0.9rem; }
 footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 0.5rem 2rem; }
+
+/* stile E2 */
+.eyebrow, .mode .tag { color: var(--sand); }
+.btn { border-radius: 4px; }
+header.top { background: var(--green); border-bottom: none; }
+body::before { background: var(--green); }
+.brand { color: var(--cream); }
+nav a { color: var(--green-ink); }
+nav a:hover { color: var(--cream); }
+.hero { background: var(--green); color: var(--cream); }
+.hero .eyebrow { color: var(--hero-btn); }
+.hero .lead, .hero figcaption { color: var(--green-ink); }
+.hero .btn.primary { background: var(--hero-btn); color: var(--hero-btn-ink); border-color: var(--hero-btn); }
+.hero .btn.ghost { color: var(--cream); border-color: var(--green-ink); }
+.hero a:focus-visible { outline-color: var(--hero-btn); }
+.hero figure { padding: 0 14px 14px 0; }
+.hero img { aspect-ratio: 1 / 1; border-radius: 4px; box-shadow: 14px 14px 0 var(--sand-box); object-position: 50% 25%; }
+.areas { border-top: none; gap: 1.75rem 2rem; }
+.area { padding: 0.9rem 0 0; border-bottom: none; border-top: 2px solid var(--green); }
+@media (min-width: 761px) {
+  header.top { background: var(--bg); border-bottom: 1px solid var(--line); }
+  body::before { background: var(--bg); }
+  .brand { color: var(--ink); }
+  nav a { color: var(--muted); }
+  nav a:hover { color: var(--ink); }
+  .hero { background: linear-gradient(90deg, var(--green) 0, var(--green) calc(50% + 92px), var(--bg) calc(50% + 92px), var(--bg) 100%); }
+  .hero figcaption { color: var(--muted); }
+  .hero figure { max-width: 380px; justify-self: center; }
+}
 </style>
 
 <header class="top">

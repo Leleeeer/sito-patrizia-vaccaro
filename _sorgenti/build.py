@@ -15,10 +15,9 @@ body = src.split("</style>", 1)[1].split("<script>", 1)[0]
 
 # Font ospitati sul sito (niente chiamate a Google)
 font_css = """
-@font-face { font-family: "Gloock"; src: url("fonts/gloock-400.woff2") format("woff2"); font-weight: 400; font-display: swap; }
-@font-face { font-family: "Figtree"; src: url("fonts/figtree-400.woff2") format("woff2"); font-weight: 400; font-display: swap; }
-@font-face { font-family: "Figtree"; src: url("fonts/figtree-500.woff2") format("woff2"); font-weight: 500; font-display: swap; }
-@font-face { font-family: "Figtree"; src: url("fonts/figtree-600.woff2") format("woff2"); font-weight: 600; font-display: swap; }
+@font-face { font-family: "Young Serif"; src: url("fonts/young-serif-400.woff2") format("woff2"); font-weight: 400; font-display: swap; }
+@font-face { font-family: "Source Sans 3"; src: url("fonts/source-sans-3-400.woff2") format("woff2"); font-weight: 400; font-display: swap; }
+@font-face { font-family: "Source Sans 3"; src: url("fonts/source-sans-3-600.woff2") format("woff2"); font-weight: 600; font-display: swap; }
 """
 extra_css = """
 :root { padding-top: env(safe-area-inset-top, 0px); padding-bottom: env(safe-area-inset-bottom, 0px); }
@@ -34,10 +33,6 @@ img { max-width: 100%; }
 .article h1 { font-size: var(--step-3); margin-top: 0.75rem; }
 .article .body { display: grid; gap: 1.1rem; margin-top: 2rem; }
 .article .back { display: inline-block; margin-top: 3rem; }
-.article .body h2 { font-size: var(--step-1); margin-top: 1rem; }
-.article .body h3 { font-size: var(--step-0); margin-top: 0.5rem; }
-.article .body hr { border: 0; border-top: 1px solid var(--line); width: 100%; margin: 1rem 0 0; }
-.article .body ul { margin: 0; padding-left: 1.1rem; display: grid; gap: 0.4rem; }
 """
 style = font_css + css + extra_css
 
@@ -124,10 +119,9 @@ if os.path.exists(OUT):
 os.makedirs(OUT)
 write("style.css", style.strip() + "\n")
 shutil.copy(os.path.join(BASE, "sito", "foto.jpg"), os.path.join(OUT, "foto.jpg"))
-for name, f in [("gloock-400", "gloock/files/gloock-latin-400-normal.woff2"),
-                ("figtree-400", "figtree/files/figtree-latin-400-normal.woff2"),
-                ("figtree-500", "figtree/files/figtree-latin-500-normal.woff2"),
-                ("figtree-600", "figtree/files/figtree-latin-600-normal.woff2")]:
+for name, f in [("young-serif-400", "young-serif/files/young-serif-latin-400-normal.woff2"),
+                ("source-sans-3-400", "source-sans-3/files/source-sans-3-latin-400-normal.woff2"),
+                ("source-sans-3-600", "source-sans-3/files/source-sans-3-latin-600-normal.woff2")]:
     os.makedirs(os.path.join(OUT, "fonts"), exist_ok=True)
     shutil.copy(os.path.join(FONTS, f), os.path.join(OUT, "fonts", name + ".woff2"))
 
