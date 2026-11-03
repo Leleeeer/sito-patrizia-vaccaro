@@ -1,5 +1,16 @@
 # Testi degli articoli copiati dal sito WordPress (senza immagini né stili)
 ARTICOLI = [
+{"data": "2026-11-03", "data_it": "3 novembre 2026", "slug": "la-curiosita-ai-tempi-dellintelligenza-artificiale",
+ "descrizione": "Delega, agency e fonti della conoscenza per le generazioni che crescono con l'intelligenza artificiale: perché la curiosità sarà l'abilità da coltivare.",
+ "titolo": "La curiosità ai tempi dell'intelligenza artificiale", "html": """
+<p>L'altro giorno osservavo mio figlio quindicenne mentre trafficava con Claude Code, uno strumento di intelligenza artificiale, per crearsi una sorta di agenda con cui pianificare le attività della giornata.</p>
+<p>«Fa impressione la rapidità con cui crea tutto in automatico e attinge dalle varie app che collego», mi ha detto. «Fa anche un po' paura.»</p>
+<p>Da lì abbiamo cominciato a ragionare insieme: da dove viene la conoscenza di Claude, cosa significa delegare, quanto è limitato un singolo punto di vista, cosa rischiamo se viene a mancare il pensiero critico. A un certo punto credo di averlo perso per strada. Ma quella conversazione mi ha fatto capire che non basta chiedersi come l'intelligenza artificiale cambia il lavoro nelle aziende: occorre ragionare anche sulle generazioni che crescono, o addirittura nascono, con questi strumenti.</p>
+<p>Il mio cervello ha conosciuto l'epoca in cui, se eri fuori casa, per telefonare servivano i gettoni. Per orientarmi usavo il TuttoCittà e compilavo liste per ricordarmi le cose (a dire il vero lo faccio ancora). Scrivevo a mano e per fare ricerca usavo i libri.</p>
+<p>Oggi l'intelligenza artificiale è come avere un assistente personale sempre con sé, una sorta di risolutore di problemi a cui si rischia di delegare tutto: per evitare la fatica, ottimizzare le risorse, fare prima.</p>
+<p>Per questo riflettere sulla delega e sull'agency, cioè sulla capacità di essere protagonisti delle proprie scelte, e sulle fonti della conoscenza diventa importante e urgente. Perché le menti non si spengano e non si perdano quelle capacità di ricerca che prima erano necessarie.</p>
+<p>Forse la curiosità sarà l'abilità da coltivare di più. È la curiosità che dà accesso allo stupore e alla meraviglia, che forse restano il motore della conoscenza e della scoperta.</p>
+"""},
 {"data": "2026-11-01", "data_it": "1 novembre 2026", "slug": "la-sottile-linea-tra-il-burnout-della-cura-e-il-bisogno-di-cura",
  "descrizione": "Chi cura ha bisogno di cura: la stanchezza del dare, i limiti della resilienza e un altro modo di prendersi cura delle persone.",
  "titolo": "La sottile linea tra il burnout della cura e il bisogno di cura", "html": """
