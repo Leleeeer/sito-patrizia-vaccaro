@@ -1,5 +1,28 @@
 # Testi degli articoli copiati dal sito WordPress (senza immagini né stili)
 ARTICOLI = [
+{"data": "2026-11-03", "data_it": "3 novembre 2026", "slug": "le-risorse-non-sono-costanti-menopausa-e-lavoro",
+ "descrizione": "Menopausa e lavoro: sintomi, dati italiani sull'impatto sulla prestazione e perché le organizzazioni dovrebbero tenere conto che le risorse delle persone cambiano.",
+ "titolo": "Le risorse non sono costanti: menopausa e lavoro", "html": """
+<p>Progettiamo il lavoro come se le risorse delle persone fossero costanti. Ma lo sono davvero?</p>
+<p>Le persone attraversano transizioni che cambiano energie, bisogni e modo di affrontare la quotidianità. Eppure, spesso, tutto intorno continua a chiedere loro di funzionare come prima.</p>
+<p>La menopausa è un esempio. I possibili sintomi sono 72, e oltre un terzo della vita lo trascorriamo dopo questa fase. Senza contare la menopausa precoce o indotta per motivi medici, di cui si parla ancora meno. Una review pubblicata su Science e uno studio su Nature Medicine del 12 ottobre aiutano a comprendere la portata di questa transizione fisiologica.</p>
+<h2>E il lavoro?</h2>
+<p>L'indagine italiana Menopausa e Lavoro, condotta su 1.576 donne tra i 45 e i 65 anni, rileva che per il 70% i sintomi hanno un impatto medio-alto sulla prestazione lavorativa. Il 37,7% non ne parla e solo il 2,7% ne parla con il datore di lavoro. Il rapporto stima in circa 112 milioni di euro l'anno il costo delle assenze legate ai sintomi.</p>
+<p>Nelle donne che incontro vedo quanto sia faticoso tenere insieme tutto mentre energie e bisogni cambiano. Mi colpisce quanto sia normale non riconoscere che questa transizione può incidere sulla percezione di sé, del mondo e della quotidianità. Se è difficile per chi la attraversa, figuriamoci per chi le sta intorno, dalla famiglia al lavoro.</p>
+<p>Non è una questione di essere meno capaci, ma di riconoscere che le risorse non sono costanti e che corpo e mente, in alcune fasi, chiedono nuovi equilibri. Le organizzazioni misurano le prestazioni, molto meno le condizioni che permettono alle persone di sostenerle nel tempo. Per questo sarebbe utile che questo tema trovasse spazio anche in azienda.</p>
+<p>La menopausa può essere una condizione di vulnerabilità. Non perché renda le donne meno capaci, ma perché può modificare le risorse con cui affrontano le richieste della vita e del lavoro. Eppure il contesto continua spesso a chiedere loro di funzionare come prima.</p>
+<p>È anche da qui che mi interessa guardare all'intelligenza artificiale e ai fattori umani. Se la vulnerabilità nasce anche dall'interazione tra risorse personali e richieste dell'ambiente, possiamo progettare strumenti e attività che tengano conto di questa variabilità? L'intelligenza artificiale può alleggerire i carichi e sostenere le competenze? E come evitare che, nei momenti di maggiore vulnerabilità, diventi più difficile mantenere la propria agency, cioè la capacità di scegliere e agire in autonomia?</p>
+<p>Le energie recuperate non devono diventare nuove richieste di produttività. Il supporto tecnologico non deve sostituire il giudizio, le competenze e l'autonomia delle persone. Possiamo usare l'intelligenza artificiale come risorsa, invece di limitarci a chiedere alle persone di adattarsi?</p>
+<p>Occorre ripensare il lavoro e usare la tecnologia tenendo conto del fatto che le persone cambiano.</p>
+<hr>
+<h3>Fonti</h3>
+<ul>
+<li>Gravelsins et al., <em>Science</em> (2026), <a href="https://doi.org/10.1126/science.aeg5004">doi:10.1126/science.aeg5004</a></li>
+<li>Pridham et al., <em>Nature Medicine</em> (2026), <a href="https://doi.org/10.1038/s41591-026-04614-0">doi:10.1038/s41591-026-04614-0</a></li>
+<li>Fondazione Onda, <em>Menopausa e Lavoro</em> (2025)</li>
+<li>Faubion et al., <em>Mayo Clinic Proceedings</em> (2023), <a href="https://doi.org/10.1016/j.mayocp.2023.02.025">doi:10.1016/j.mayocp.2023.02.025</a></li>
+</ul>
+"""},
 {"data": "2026-11-03", "data_it": "3 novembre 2026", "slug": "la-curiosita-ai-tempi-dellintelligenza-artificiale",
  "descrizione": "Delega, agency e fonti della conoscenza per le generazioni che crescono con l'intelligenza artificiale: perché la curiosità sarà l'abilità da coltivare.",
  "titolo": "La curiosità ai tempi dell'intelligenza artificiale", "html": """
