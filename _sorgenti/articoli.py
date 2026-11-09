@@ -1,5 +1,27 @@
 # Testi degli articoli copiati dal sito WordPress (senza immagini né stili)
 ARTICOLI = [
+{"data": "2026-11-09", "data_it": "9 novembre 2026", "slug": "vulnerabilita-cio-che-puo-essere-ferito",
+ "titolo": "Vulnerabilità: ciò che può essere ferito", "html": """
+<p>Come ho raccontato in <a href="/2026/11/01/la-fatica-la-fiducia-e-lintelligenza-artificiale/">un articolo precedente</a>, quest'estate ho passato del tempo a dialogare con l'intelligenza artificiale per costruirmi un piano B. In quelle conversazioni mi sono accorta di una cosa: quando ero più stanca o insicura, mi lasciavo trascinare più facilmente in lunghe digressioni filosofiche e in una sorta di perfezionismo senza fine su come e che cosa fare. La stanchezza e l'insicurezza creavano le condizioni perché mi affidassi alla traiettoria che l'AI mi proponeva, senza rendermi conto che quella traiettoria era, in realtà, il riflesso della mia confusione e del mio tergiversare.</p>
+<p>Accorgermene mi ha permesso di fare un passo indietro e di dire, anche all'AI: «Cerchiamo di essere pratici. Ricordiamo l'intenzione di tutto questo». Quel richiamo è stato la sveglia: il ritiro della delega e la ripresa della rotta.</p>
+<p>C'è una parola che suona e risuona nelle cose che leggo, che faccio e che vivo, e che quell'episodio mi ha riportato davanti: vulnerabilità. Ci riflettevo anche stamattina. Lavoro ogni giorno con la vulnerabilità, mi sto interessando al fattore umano nell'interazione con l'intelligenza artificiale e ho ben presente la mia.</p>
+<p>La parola deriva dal latino <em>vulnerabilis</em>, legato al verbo <em>vulnerare</em> ("ferire") e al sostantivo <em>vulnus</em> ("ferita"). Il suo significato originario è quindi "ciò che può essere ferito", o "esposto a ricevere una ferita".</p>
+<p>Esistono, credo, due forme di vulnerabilità. La prima è legata ai momenti: i cambiamenti, le rotture, le transizioni, le stanchezze, le malattie. Tutto ciò che rompe uno stato di equilibrio ci rende più vulnerabili, perché riduce le risorse che fino a quel momento avevamo a disposizione. La seconda fa parte di noi: in quanto esseri umani abbiamo dei limiti, delle soglie oltre le quali rischiamo di romperci. Non possiamo eliminarla, ma possiamo conoscerla.</p>
+<p>Il lavoro clinico è un lavoro di consapevolezza e di riconoscimento delle proprie vulnerabilità. Lo scopo non è smettere di averle, ma imparare a danzarci insieme e trasformarle in risorse o solo lasciarle lì e ripartire.</p>
+<p>Nelle relazioni, mostrare la propria vulnerabilità è un atto di fiducia verso l'altro, a cui chiediamo aiuto o semplicemente ascolto. Nel campo dell'ingegneria sociale, cioè delle tecniche usate per manipolare le persone e ottenere informazioni o accessi, la vulnerabilità è invece proprio l'elemento che viene cercato e sollecitato perché la manipolazione abbia successo.</p>
+<p>Lo stesso gesto, mostrarsi, può quindi essere un atto di fiducia oppure la porta d'ingresso per chi vuole approfittarne.</p>
+<p>Quando interagiamo con un'intelligenza artificiale facciamo spesso la stessa cosa: chiediamo aiuto, ci affidiamo, a volte proprio nei momenti in cui dobbiamo ottimizzare le energie. È un gesto di fiducia, ma è anche il punto in cui la nostra vulnerabilità diventa più esposta, rischiando di far sì che la fiducia si trasformi in delega e in perdita di controllo. È quello che mi era successo quest'estate. Credo che parlare di fattore umano nell'AI significhi, prima di tutto, parlare di vulnerabilità.</p>
+<p>Quell'esperienza mi ha ricordato ciò che vedo ogni giorno nel mio lavoro: quello che aiuta non è sconfiggere le proprie vulnerabilità, ma esserne consapevoli. Solo così gli automatismi che mettiamo in atto in reazione a quello stato non prendono il sopravvento, e possiamo permetterci di scegliere come stare e che cosa fare.</p>
+<p>Vale nella vita reale come in quella virtuale. Ogni tanto è utile fermarsi e chiedersi:</p>
+<ul>
+<li>Come sto in questo momento?</li>
+<li>Sto verificando le risposte o le sto solo subendo?</li>
+<li>Sto delegando un compito, una decisione... la vita?</li>
+<li>Qual è l'intenzione che mi guida?</li>
+</ul>
+<hr>
+<p><em>Su questi temi ho scritto anche</em> <a href="/2026/11/01/la-sottile-linea-tra-il-burnout-della-cura-e-il-bisogno-di-cura/">La sottile linea tra il burnout della cura e il bisogno di cura</a> <em>e</em> <a href="/2026/11/01/la-fatica-la-fiducia-e-lintelligenza-artificiale/">La fatica, la fiducia e l'intelligenza artificiale</a>.</p>
+"""},
 {"data": "2026-11-03", "data_it": "3 novembre 2026", "slug": "le-risorse-non-sono-costanti-menopausa-e-lavoro",
  "descrizione": "Menopausa e lavoro: sintomi, dati italiani sull'impatto sulla prestazione e perché le organizzazioni dovrebbero tenere conto che le risorse delle persone cambiano.",
  "titolo": "Le risorse non sono costanti: menopausa e lavoro", "html": """
