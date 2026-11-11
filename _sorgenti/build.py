@@ -109,6 +109,7 @@ def page(title, desc, path, content, tipo="website"):
 <meta property="og:type" content="{tipo}">
 <link rel="icon" href="/foto.jpg">
 <link rel="stylesheet" href="/style.css">
+<script data-goatcounter="https://patriziavaccaro.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 </head>
 <body>
 {content}
@@ -166,7 +167,8 @@ redirects = {
     "about": "/#chi-sono", "chi-sono": "/#chi-sono", "cosa-faccio": "/#di-cosa-mi-occupo",
     "di-cosa-mi-occupo": "/#di-cosa-mi-occupo", "psicoterapia-e-infertilita": "/#di-cosa-mi-occupo",
     "persone-e-intelligenza-artificiale": "/#persone-e-ia", "articoli": "/#articoli",
-    "contatti": "/#contatti", "home": "/", "link": "/", "eventi": "/",
+    "contatti": "/#contatti", "contatti-2015": "/#contatti",
+    "la-psicoterapia-cognitiva": "/#di-cosa-mi-occupo", "home": "/", "home-3": "/", "link": "/", "eventi": "/",
 }
 for slug, target in redirects.items():
     write(f"{slug}/index.html", f"""<!doctype html><html lang="it"><head><meta charset="utf-8">
