@@ -1,7 +1,9 @@
 # Testi degli articoli copiati dal sito WordPress (senza immagini né stili)
 ARTICOLI = [
 {"data": "2026-11-09", "data_it": "9 novembre 2026", "slug": "vulnerabilita-cio-che-puo-essere-ferito",
- "titolo": "Vulnerabilità: ciò che può essere ferito", "html": """
+ "titolo": "Vulnerabilità: ciò che può essere ferito",
+ "descrizione": "Vulnerabilità significa ciò che può essere ferito: nella clinica, nelle relazioni, nella manipolazione e nel rapporto con l'intelligenza artificiale.",
+ "html": """
 <p>Quando quest'estate ho dialogato con l'AI per il mio piano B, mi sono accorta di una cosa: quando ero più stanca o insicura, mi lasciavo trascinare più facilmente in filosofeggiamenti e perfezionismi senza fine su come e che cosa fare. La stanchezza e l'insicurezza creavano le condizioni perché mi affidassi alla traiettoria che l'AI mi proponeva, senza rendermi conto che quella traiettoria era, in realtà, il riflesso della mia confusione e del mio tergiversare.</p>
 <p>Accorgermene mi ha permesso di fare un passo indietro e di dire, anche all'AI: «Cerchiamo di essere pratici. Ricordiamo l'intenzione di tutto questo». Quel richiamo è stato la sveglia: il ritiro della delega e la ripresa della rotta.</p>
 <p>C'è una parola che suona e risuona nelle cose che leggo, che faccio e che vivo, e che quell'episodio mi ha riportato davanti: vulnerabilità. Ci riflettevo anche stamattina. Lavoro ogni giorno con la vulnerabilità, mi sto interessando al fattore umano nell'interazione con l'intelligenza artificiale e ho ben presente la mia.</p>
